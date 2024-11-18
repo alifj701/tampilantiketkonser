@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundsfest Experience Bekasi - Ticket Purchase</title>
+    <link rel="stylesheet" href="tiket2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo1.jpg" alt="Necrostein Logo" class="logo">
+            <h1>NECROSTEIN KARAWANG</h1>
+            <div class="timer">
+                <p>We keep your ticket(s) for <span id="time">05:00</span>. After the timer ends, we will release your ticket.</p>
+            </div>
+        </header>
+        
+        <nav>
+            <button class="nav-btn active" onclick="showTickets()">Tickets</button>
+            <button class="nav-btn" onclick="showDescription()">Event Description</button>
+        </nav>
+
+        <section class="tickets">
+            <h2>Category Ticket</h2>
+
+            <!-- Presale 2 Festival -->
+            <div class="ticket-container">
+                <div class="ticket-row">
+                    <div class="ticket-category">Presale 2 Festival</div>
+                    <div class="ticket-price">Rp 20.000</div>
+                    <div class="ticket-quantity">
+                        <button class="qty-btn" id="minus-btn">-</button>
+                        <input type="number" id="ticket-count" value="0" min="0">
+                        <button class="qty-btn" id="plus-btn">+</button>
+                    </div>
+                </div>
+                <div class="total-price-container">
+                    Total Harga: <span id="total-price">Rp 0</span>
+                </div>
+            </div>
+
+            <!-- Presale 1 Festival -->
+            <div class="ticket-container">
+                <div class="ticket-row">
+                    <div class="ticket-category">Presale 1 Festival</div>
+                    <div class="ticket-price">Rp 15.000</div>
+                    <div class="ticket-quantity">
+                        <button class="qty-btn" id="minus-btn-super">-</button>
+                        <input type="number" id="ticket-count-super" value="0" min="0">
+                        <button class="qty-btn" id="plus-btn-super">+</button>
+                    </div>
+                </div>
+                <div class="total-price-container">
+                    Total Harga: <span id="total-price-super">Rp 0</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="text">Harga sudah termasuk pajak dan biaya administrasi.</p>
+            <div class="summary">
+                <span class="totalharga">Total: Rp. <span id="total">0</span></span>
+                <a href="https://wa.me/6285888808554?text=Permisi kak, saya ingin melakukan pembelian tiket" target="_blank" class="button">
+                    <button class="proses"onclick="proceed()">Next</button>
+                </a>
+            </div>
+        </footer>
+
+        <div id="description" class="description hidden">
+            <h3>Deskripsi Acara</h3>
+            <p>
+                Soundsfest Experience Bekasi akan diadakan pada 22 Desember 2024 di Bekasi. Acara ini menampilkan 
+                band rock terkenal Necrostein sebagai bintang utama. Nikmati pengalaman festival musik dengan 
+                suara dan pencahayaan yang spektakuler, serta berbagai artis lain yang akan tampil.
+            </p>
+        </div>
+    </div>
+
+    <script src="tiket2.js"></script>
+</body>
+</html>

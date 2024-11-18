@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-card {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-image: url("bgtampilan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgb(254, 254, 254);
+    color: white;
+    position: relative;
+}
+
+.ticket-card:hover {
+    cursor: pointer;
+}
+
+.ticket-left {
+    padding: 30px;
+    flex: 2;
+    /* margin-top: -50px; --> Hilangkan margin negatif */
+}
+
+.ticket-goler {
+    writing-mode: vertical-rl;
+    border-left: 1px dashed white;
+    border-left-width: 2px;
+    height: 100%; /* Pastikan garis memanjang ke seluruh tinggi elemen */
+}
+
+.ticket-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 2px solid white;
+}
+
+.ticket-details p {
+    margin: 5px 0;
+}
+
+.ticket-barcode img {
+    width: 100px;
+    height: 50px;
+}
+
+.ticket-left h2, .ticket-left p {
+    color: white;
+}
+
+.ticket-right p {
+    color: white;
+}
